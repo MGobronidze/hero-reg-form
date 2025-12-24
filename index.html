@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hero Academy Sign-up</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <form class="hero-form">
+    <h1> Hero Academy</h1>
+    <p>Join the league of protectors!</p>
+
+    <label for="name">Superhero Name:</label>
+    <input type="text" id="name" placeholder="e.g. Captain Sparkle">
+
+    <label for="email">Secret Email:</label>
+    <input type="email" id="email" placeholder="hero@secretbase.com">
+
+    <label for="power">Power Level (1-100):</label>
+    <input type="number" id="power" min="1" max="100">
+
+    <p>Do you have a sidekick?</p>
+    <div class="radio-group">
+      <input type="radio" id="yes" name="sidekick" value="yes">
+      <label for="yes">Yes</label>
+      <input type="radio" id="no" name="sidekick" value="no">
+      <label for="no">No</label>
+    </div>
+
+    <p>Pick your Superpowers:</p>
+    <div class="checkbox-group">
+      <input type="checkbox" id="flight"> <label for="flight">Flight</label><br>
+      <input type="checkbox" id="strength"> <label for="strength">Strength</label><br>
+      <input type="checkbox" id="invisibility"> <label for="invisibility">Invisibility</label>
+    </div>
+
+    <label for="planet">Home Planet:</label>
+    <select id="planet">
+      <option value="earth">Earth</option>
+      <option value="mars">Mars</option>
+      <option value="jupiter">Jupiter</option>
+    </select>
+
+    <label for="story">Your Origin Story:</label>
+    <textarea id="story" rows="4" placeholder="How did you get your powers?"></textarea>
+
+    <button type="submit">Enlist Now!</button>
+  </form>
+
+</body>
+</html>
